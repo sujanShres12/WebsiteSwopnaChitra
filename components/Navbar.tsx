@@ -18,7 +18,7 @@ const CustomNavbar: React.FC = () => {
             <Nav.Link as={Link} href="/#about">About Us</Nav.Link>
             <Nav.Link as={Link} href="/#services">Services</Nav.Link>
             <Nav.Link as={Link} href="/#portfolio">Portfolio</Nav.Link>
-            <Nav.Link as={Link} href="/team">About the Team</Nav.Link>
+            {/* <Nav.Link as={Link} href="/team">About the Team</Nav.Link> */}
             <Nav.Link as={Link} href="/contact">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>

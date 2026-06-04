@@ -37,14 +37,15 @@ export default function Home() {
             <div className="d-flex justify-content-center gap-3">
               <Link
                 href="#portfolio"
-                style={{}}
-                className="btn btn-outline-warning btn-lg px-5 py-3 text-gold"
+                style={{ border: "2px solid #FFD700" }}
+                className="btn btn-lg px-5 py-3 text-gold"
               >
                 View Portfolio
               </Link>
               <Link
                 href="#services"
-                className="btn btn-outline-warning btn-lg px-5 py-3 text-gold"
+                style={{ border: "2px solid #FFD700" }}
+                className="btn  btn-lg px-5 py-3 text-gold btn-outline-[#000000]"
               >
                 Our Services
               </Link>
@@ -64,7 +65,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h2 className="display-4 mb-4">About Us</h2>
+                <h2 className="display-4 mb-4 text-gold">About Us</h2>
                 <p className="lead text-white-50">
                   At SWOPNA CHITRA, we believe that every brand has a story
                   waiting to be told. With over a decade of experience in the
@@ -104,7 +105,7 @@ export default function Home() {
       <section id="services" className="bg-dark bg-opacity-25">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-4">Our Services</h2>
+            <h2 className="display-4 text-gold">Our Services</h2>
             <div
               className="mx-auto bg-gold"
               style={{ height: "3px", width: "80px" }}
@@ -155,7 +156,7 @@ export default function Home() {
       <section id="portfolio">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-4">Recent Portfolio</h2>
+            <h2 className="display-4 text-gold">Recent Portfolio</h2>
             <p className="text-white-50">
               A glimpse into our cinematic journey.
             </p>
@@ -184,23 +185,29 @@ export default function Home() {
                 </motion.div>
               </div>
             ))}
+            <Link
+              href="/portfolio"
+              className=" d-inline-flex align-items-center gap-2 text-gold"
+            >
+              Show More <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Team Summary Section */}
-      <section id="team-summary" className="bg-midnight">
+      {/* <section id="team-summary" className="bg-midnight">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-              <h2 className="display-4 mb-4">Meet the Visionaries</h2>
+              <h2 className="display-4 mb-4 text-gold">Meet the Visionaries</h2>
               <p className="lead text-white-50 mb-4">
                 Our team is a blend of experienced veterans and young creative
                 minds, all united by a passion for visual storytelling.
               </p>
               <Link
                 href="/team"
-                className="btn btn-gold btn-lg d-inline-flex align-items-center gap-2"
+                className="btn btn-gold btn-lg d-inline-flex align-items-center gap-2 text-gold"
               >
                 Read More About the Team <ArrowRight size={20} />
               </Link>
@@ -231,12 +238,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Summary Section */}
       <section id="contact-summary" className="bg-dark bg-opacity-25">
         <div className="container text-center">
-          <h2 className="display-4 mb-4">
+          <h2 className="display-4 mb-4 text-gold">
             Let&apos;s Create Something Amazing
           </h2>
           <p
@@ -248,7 +255,8 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="btn btn-outline-gold btn-lg px-5 py-3"
+            style={{ border: "2px solid #FFD700" }}
+            className="btn btn-lg px-5 py-3 text-gold"
           >
             Contact Us Now
           </Link>
