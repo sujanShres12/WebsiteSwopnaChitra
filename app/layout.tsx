@@ -1,25 +1,17 @@
-import type {Metadata} from 'next';
-import './globals.css';
-import CustomNavbar from '@/components/Navbar';
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'SWOPNA CHITRA | Premium Production Company',
-  description: 'Specializing in TV commercials, social media content, corporate event coverage, and social media marketing.',
+  title: "Swopna Chitra | Nepal's Premier Production House",
+  description:
+    "Swopna Chitra is a Kathmandu-based production house crafting films, music videos, commercials, and documentaries that celebrate Nepal's stories.",
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className="bg-midnight">
-        <CustomNavbar />
-        <main>{children}</main>
-        <footer className="footer text-center">
-          <div className="container">
-            <p className="mb-0">&copy; {new Date().getFullYear()} <span className="text-gold fw-bold">SWOPNA CHITRA</span>. All Rights Reserved.</p>
-            <p className="small text-muted mt-2">Cinematic Excellence in Every Frame.</p>
-          </div>
-        </footer>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
